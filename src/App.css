@@ -1,0 +1,520 @@
+
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Vy-logo {
+  max-width: 120px;
+  position: absolute;
+  left: -3px;
+  top: 18px;
+}
+
+
+
+.heitekst {
+  size: 2em;
+  text-align: center;
+  top: 100px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+.search-bar-from, .search-bar-to {
+  background-color: #F2F2F3;
+  border: none;
+  border-bottom: 2px solid #212721;
+  height: 45px;
+  width: 340px;
+  font-size: 1.55rem;
+  padding: 15px;
+}
+
+.reisetekst {
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.search-button {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 370px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* .rutekort {
+  border:1px solid #C7C9C7;
+} */
+
+.rutekortInnhold {
+  position: relative;
+  border-top:1px solid #C7C9C7;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* .rutekortInnhold {
+  margin-left: 20px;
+} */
+
+.seDetaljerBtn {
+  color: white;
+  background-color: #00685E;
+  border: 0px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+
+
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+
+	overflow-y: scroll;
+}
+
+.popup .content {
+	/* display: block; */
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 5px;
+
+	
+}
+
+.popup .content .close {
+	display: inline-block;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: 700;
+
+	background: white;
+	color: black;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+
+	transition: 0.4s ease-out;
+}
+
+
+
+.confirmationDiv {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.bekreftReiseDetaljer {
+  text-align: left;
+  border-top:1px solid #C7C9C7;
+}
+
+.bekreftReiseBtn {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 400px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.popUpHeaderTxt {
+  border-bottom:1px solid #C7C9C7;
+}
+
+.confirmTravelBtn {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 400px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  margin-top: 25px;
+  
+}
+
+.renderLegsMainDiv {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-bottom:1px solid #C7C9C7;
+  height: 110px;
+
+}
+
+.legsImgDesc {
+
+  left: 11px;
+  position: relative;
+  top: -15px;
+  
+}
+
+.renderLegsTime {
+  display: inline;
+  position: relative;
+  font-size: 20px;
+  left: 90px;
+  bottom: 35px;
+}
+
+.renderLegsTravelPlaces {
+  position: relative;
+  font-size: 20px;
+  font-weight: 250;
+  left: 90px;
+  top: 15px;
+}
+
+.renderLegsInfoWrapper {
+  display: inline;
+  position: relative;
+ 
+  left: 100px;
+  bottom: 100px;
+}
+
+.dinReiseTxt {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.dinReiseDato {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.dinReiseReise {
+  font-size: 28px;
+}
+
+
+.checkmarkImg {
+  position: absolute;
+  height: 60px;
+  right: 50px;
+  top: 260px;
+}
+
+.confirmationHeaderTxt {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.minSideTitle {
+  position: absolute;
+  left: 10px;
+  top: 90px;
+  font-size: 30px;
+}
+
+.openTicketsBtn {
+  background-color: #C1DFDF;
+  color: black;
+  height: 70px;
+  font-size: 18px;
+  width: 400px;
+  border-radius: 1px;
+  border: 0;
+  text-align: center;
+  bottom: 200px;
+  position: absolute;
+
+}
+
+.minSideName {
+  left: 10px;
+  font-size: 20px;
+  top: 160px;
+  position: absolute;
+  border-bottom: 1px solid #C7C9C7;
+
+}
+
+.minSideKundeNummer{
+  left: 10px;
+  top: 225px;
+  position: absolute;
+
+
+}
+
+.minSideKundeEpost{
+  left: 10px;
+  top: 197px;
+  position: absolute;
+
+
+}
+
+.mySiteHeader {
+  border-bottom: 1px solid rgb(49, 49, 49);
+  width: 100%;
+  left: -10px;
+  height: 340px;
+}
+
+.minSideReiserTxt {
+  position: absolute;
+  top: 299px;
+  border-bottom: 4px solid #00957A;
+  left: 10px;
+  font-size: 20px;
+}
+
+.minSidePeriodeBilletter {
+  position: absolute;
+  top: 299px;
+  font-size: 20px;
+  left:125px;
+  font-size: 20px;
+  color: rgb(121, 121, 121);
+}
+
+.minSideAndreKjop {
+  position: absolute;
+  top: 299px;
+  font-size: 20px;
+  right: 10px;
+  font-size: 20px;
+  color: rgb(121, 121, 121);
+}
+
+.minSideKommendeReiser {
+  font-size: 25px;
+  top: 20px;
+  position: relative;
+  font-weight: 300;
+
+}
+
+.ticketDiv {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #C7C9C7;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  margin-right: 25px;
+  
+  
+
+}
+
+.ticketWrapper {
+  top: 540px;
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  flex-shrink: 0;
+  z-index: 100;
+  background-color: white;
+
+}
+
+.rutekortTittel {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.slide-container {
+  width: 100%;
+  margin: auto; }
+ 
+h3 {
+  text-align: center; }
+ 
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 500px;
+}
+ 
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+ 
+.each-fade {
+  display: flex;
+}
+ 
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+ 
+.each-fade .image-container img {
+  width: 100%;
+}
+ 
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+.modalKomIGangBtn {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 290px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.QRcodeTitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+
+}
+
+.QRcodeImg {
+ width: 200px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 100px;
+}
+
+.modalLukkBillettBtn {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 290px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.openBybilTicketBtn {
+  background-color: #C1DFDF;
+  color: black;
+  height: 70px;
+  font-size: 18px;
+  width: 400px;
+  border-radius: 1px;
+  border: 0;
+  text-align: center;
+  bottom: -160px;
+  position: relative;
+}
+
+.openBybilBtn {
+  background-color: #00685E;
+  color: white;
+  height: 42px;
+  font-size: 18px;
+  width: 170px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  position: absolute;
+  right: 25px;
+  top: 38px;
+}
+
+.modalLukkBybilBtn {
+  background-color: #00685E;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  width: 290px;
+  border-radius: 4px;
+  border: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.bybilModalTitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+.bybilKartImg {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+ }
+
+ .bybilTicketWrapper {
+  bottom: -121px;
+  left: 5px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  flex-shrink: 0;
+  z-index: 100;
+  background-color: white;
+ }
+
+ .bybilTicketDiv {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #C7C9C7;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin-right: 25px;
+ }
